@@ -10,6 +10,7 @@ const routes = require('./routes');
 const app = express();
 
 app.disable('x-powered-by');
+app.set('trust proxy', 1);
 app.use(helmet());
 app.use(cors({ origin: env.clientUrl.split(',').map((s) => s.trim()), credentials: true }));
 app.use(express.json({ limit: '1mb' }));

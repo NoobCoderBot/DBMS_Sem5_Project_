@@ -5,3 +5,5 @@ dist/
 coverage/
 *.log
 backend/tests/.uri
+.vercel
+.env*

@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.data
+coverage
+*.log
+backend/tests/.uri
+.env.local
+.env*.local
+.vercel
